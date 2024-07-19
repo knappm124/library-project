@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add New Book to Library</title>
+    <link rel="stylesheet" href="resources/css/main.css">
+    <link rel="stylesheet" href="resources/css/addnew.css">
+</head>
+<body>
+    <header>
+        <a href="index.html"><img src="resources/img/esboces_logo.png" alt="Easter Suffolk Boces logo"></a>
+    </header>
+    <input type="button" id="fiction_button" value="Add a Fiction Book" onclick="showFictionForm()">
+    <input type="button" id="nonfiction_button" value="Add a Non-Fiction Book" onclick="showNonFictionForm()">
+    <input type="button" id="goback" class="hidden" value="Go Back" onclick="hideForms()">
+    <form id="fictionForm" class="hidden">
+        <label for="title">Title <span class="red">*</span></label>
+        <input type="text" id="title" required>
+        <label for="author">Author <span class="red">*</span></label>
+        <input type="text" id="author" required>
+        <label for="genre_1">Genre 1 <span class="red">*</span></label>
+        <select id="genre_1" required>
+            <option value=""></option>
+            <option value="adventure">Adventure</option>
+            <option value="classics">Classics</option>
+            <option value="comedy">Comedy</option>
+            <option value="crime">Crime</option>
+            <option value="fantasy">Fantasy</option>
+            <option value="graphic_novel">Graphic Novel</option>
+            <option value="historical">Historical</option>
+            <option value="humor">Humor</option>
+            <option value="military">Military</option>
+            <option value="mystery">Mystery</option>
+            <option value="paranormal">Paranormal</option>
+            <option value="plays">Plays</option>
+            <option value="poetry">Poetry</option>
+            <option value="realistic">Realistic</option>
+            <option value="religion">Religion</option>
+            <option value="romance">Romance</option>
+            <option value="science_fiction">Science Fiction</option>
+            <option value="sports">Sports</option>
+            <option value="supernatural">Supernatural</option>
+            <option value="thriller">Thriller</option>
+            <option value="young_adult">Young Adult</option>
+        </select>
+        <label for="genre_2">Genre 2</label>
+        <select id="genre_2">
+            <option value=""></option>
+            <option value="adventure">Adventure</option>
+            <option value="classics">Classics</option>
+            <option value="comedy">Comedy</option>
+            <option value="crime">Crime</option>
+            <option value="fantasy">Fantasy</option>
+            <option value="graphic_novel">Graphic Novel</option>
+            <option value="historical">Historical</option>
+            <option value="humor">Humor</option>
+            <option value="military">Military</option>
+            <option value="mystery">Mystery</option>
+            <option value="paranormal">Paranormal</option>
+            <option value="plays">Plays</option>
+            <option value="poetry">Poetry</option>
+            <option value="realistic">Realistic</option>
+            <option value="religion">Religion</option>
+            <option value="romance">Romance</option>
+            <option value="science_fiction">Science Fiction</option>
+            <option value="sports">Sports</option>
+            <option value="supernatural">Supernatural</option>
+            <option value="thriller">Thriller</option>
+            <option value="young_adult">Young Adult</option>
+        </select>
+        <label for="keywords">Keywords/Topics</label>
+        <textarea id="keywords"></textarea>
+        <input type="button" value="Submit">
+    </form>
+    <form id="nonfictionForm" class="hidden">
+        <label for="title">Title <span class="red">*</span></label>
+        <input type="text" id="title" required>
+        <label for="author">Author <span class="red">*</span></label>
+        <input type="text" id="author">
+        <label for="dewey">Dewey Decimal <span class="red">*</span></label>
+        <input type="number" id="dewey" min="000.001" max="999.999" step="0.001" required>
+        <label for="keywords">Keywords/Topics</label>
+        <textarea id="keywords"></textarea>
+        <input type="button" value="Submit">
+    </form>
+    <script src="resources/js/addnew.js"></script>
+</body>
+</html>
