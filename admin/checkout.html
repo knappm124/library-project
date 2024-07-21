@@ -12,12 +12,15 @@
         <a href="index.html"><img src="resources/img/esboces_logo.png" alt="Easter Suffolk Boces logo"></a>
     </header>
     <input type="button" id="checkOutBookButton" value="Check Out New Book" onclick="showCheckoutForm()">
-    <form action="admin/checkout.html">
-        <input type="submit" value="Log In">
-    </form>
+    <input type="button" id="checkedOutBooksButton" value="See Checked Out Books" onclick="showCheckedOutBooks()">
     <input type="button" id="goBackButton" value="Go Back" onclick="hideCheckout()">
+    <form id="checkoutAdminForm" class="hidden">
+        <input type="password" required>
+        <input type="button" value="Submit" onclick="checkPassword()">
+    </form>
     <form id="checkoutForm" class="hidden">
     </form>
+    <div id="checkedOutBooks" class="hidden"></div>
     <script src="resources/js/checkout.js"></script>
 </body>
 </html>
