@@ -1,4 +1,4 @@
-AuthUserFile /.htaplpmckemk
+AuthUserFile ./.htaplpmckemk
 AuthType Basic
 AuthName "admin"
 Require valid-user
