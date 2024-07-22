@@ -1,0 +1,24 @@
+img {
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-flow: column nowrap;
+    text-align: left;
+    width: 80%;
+    margin:auto;
+}
+
+input, select, textarea {
+    margin-bottom: 15px;
+}
+
+input[type="submit"] {
+    width: 70px;
+    margin: auto;
+}
+
+.red {
+    color: red;
+}

@@ -4,23 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Check Out Books</title>
-    <link rel="stylesheet" href="resources/css/main.css">
-    <link rel="stylesheet" href="resources/css/checkout.css">
+    <link rel="stylesheet" href="../resources/css/main.css">
+    <link rel="stylesheet" href="../resources/css/checkout.css">
 </head>
 <body>
     <header>
         <a href="../index.html"><img src="../resources/img/esboces_logo.png" alt="Easter Suffolk Boces logo"></a>
     </header>
-    <input type="button" id="checkOutBookButton" value="Check Out New Book" onclick="showCheckoutForm()">
     <input type="button" id="checkedOutBooksButton" value="See Checked Out Books" onclick="showCheckedOutBooks()">
-    <input type="button" id="goBackButton" value="Go Back" onclick="hideCheckout()">
-    <form id="checkoutAdminForm" class="hidden">
-        <input type="password" required>
-        <input type="button" value="Submit" onclick="checkPassword()">
+    <form action="../checkout.html">
+        <input type="submit" id="goBackButton" value="Go Back">
     </form>
-    <form id="checkoutForm" class="hidden">
-    </form>
+    <input type="button" id="goBackButton2" value="Go Back" class="hidden" onclick='hideCheckedOutBooks()'>
     <div id="checkedOutBooks" class="hidden"></div>
-    <script src="resources/js/checkout.js"></script>
+    <script src="../resources/js/checkout.js"></script>
 </body>
 </html>
