@@ -5,7 +5,7 @@ This project is to create a simple library management website. It is intended fo
 This project is currently being developed solely by Melissa Knapp (knappm124), as the only developer all questions and bugs will be directed to her.
 
 ## Current Status
-As of July 2024. This project is currently in progress and not fully functional at this time, as changes are made and functionality is added, this README file will be up Pdated to indicate what is usable and what is still in progress
+As of July 2024. This project is currently in progress and not fully functional at this time, as changes are made and functionality is added, this README file will be updated to indicate what is usable and what is still in progress
 
 ## Planned Functions
 The following items are planned functions that will be provided in the completed version of this project
